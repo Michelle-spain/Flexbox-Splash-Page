@@ -1,0 +1,181 @@
+
+/* Colours
+Gunmetal #223843
+Tangerine #F08700
+Orange web #F08700
+Yellow Munsell #EFCA08
+Grey manatee #9899A6
+
+*/
+* {
+    box-sizing:border-box;
+}
+
+body {
+ margin: 0;   
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 1rem;
+ color: #223843;
+ text-align: center;
+}
+
+/*===============
+ TYPOGRAPHY
+ ================*/
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    
+}
+
+h1 + p {
+    color: #F08700;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-size: 1.3125rem;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #F08700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.paragraph-top {
+    font-weight: 900;
+    font-size: 0.625rem;
+    color: #F08700;
+    text-transform: uppercase;
+    border-top: solid 5px #F08700;
+    margin-top: 0;
+    line-height: 2em;
+    border-image: linear-gradient(to right, #EFCA08, #F08700) 1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+}
+
+/*===============
+ INTRO SECTION
+ ================*/
+
+.section-img {
+ background-color: #404040;
+ background: url("https://img.freepik.com/free-photo/front-view-young-man-standing-inside-present-box-flexing-pink-wall_179666-7550.jpg?w=2000");
+ background-blend-mode: multiply;
+ background-position: center;
+ background-size: cover;
+ background-color: rgba(0, 0, 0, 0.6);
+ padding: 0 .5em 2em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ min-height: 50vh;
+ 
+ }
+
+ /*===============
+ MAIN CONTENT SECTION
+ ================*/
+
+ .section-form {
+    padding: 2em 1em;
+ }
+
+ .section-img *,
+ .section-form * {
+     max-width: 400px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+  /*===============
+  EMAIL COLLECTOR
+ ================*/
+ .email-collector {
+     width: 90%;
+     max-width: 300px;
+ }
+
+ input,
+ .btn {
+     width: 100%;
+     border-radius: 5px;
+ }
+
+ input {
+    font-family: inherit;
+    text-align: inherit;
+    padding: .25em;
+    margin-bottom: .75em;
+    border: 1px solid #404040; 
+    transform: scale(1);
+    transition: 400ms; 
+ }
+
+ input:focus {
+    transform: scale(1.05);
+ }
+
+ .btn-primary {
+     display: inline-block;
+     padding: 1em 1.5em;
+     font-size: 0.625rem;
+     font-weight: bold;
+     letter-spacing: 1px;
+     border: 0;
+     cursor: pointer;
+     background-image: linear-gradient(to right, #EFCA08, #F08700);
+     color: #fff;
+     transform: scale(1);
+     transition: 400ms;
+ }
+
+ .btn-primary:hover,
+ .btn-primary:focus {
+     color: black;
+     transform: scale(1.05)
+ }
+
+ /*===============
+ MEDIA QUERY
+ ================*/
+
+ @media (min-width:650px ) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2, h1 + p {
+        font-size: 1.75rem;
+    }
+    .container {
+        display: flex;
+    }
+    .section-img, .section-form {
+        width: 50%;
+        min-height: 100vh;
+    }
+    .section-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+ }
